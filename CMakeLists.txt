@@ -1,6 +1,22 @@
-cmake_minimum_required(VERSION 3.20)
-project(Manipulating_TGA_Files C)
+cmake_minimum_required(VERSION 3.10)
 
-set(CMAKE_C_STANDARD 11)
+project(image_tool)
 
-add_executable(Manipulating_TGA_Files main.c)
+add_executable(tga_reader tga_reader.c)
+
+set_target_properties(
+        tga_reader
+        PROPERTIES
+        C_STANDARD 11
+        C_STANDARD_REQUIRED YES
+        C_EXTENSIONS NO
+        CXX_STANDARD 17
+        CXX_STANDARD_REQUIRED YES
+        CXX_EXTENSIONS NO)
+
+if (MSVC)
+    add_compile_options(/Wall /WX)
+else()
+    add_compile_options(-Wall -Wextra)
+endif()
+

@@ -116,24 +116,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Manipulating_TGA_Files
+# Target rules for targets named tga_reader
 
 # Build rule for target.
-Manipulating_TGA_Files: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Manipulating_TGA_Files
-.PHONY : Manipulating_TGA_Files
+tga_reader: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tga_reader
+.PHONY : tga_reader
 
 # fast build rule for target.
-Manipulating_TGA_Files/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Manipulating_TGA_Files.dir\build.make CMakeFiles/Manipulating_TGA_Files.dir/build
-.PHONY : Manipulating_TGA_Files/fast
+tga_reader/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\tga_reader.dir\build.make CMakeFiles/tga_reader.dir/build
+.PHONY : tga_reader/fast
 
 main.obj: main.c.obj
 .PHONY : main.obj
 
 # target to build an object file
 main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Manipulating_TGA_Files.dir\build.make CMakeFiles/Manipulating_TGA_Files.dir/main.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\tga_reader.dir\build.make CMakeFiles/tga_reader.dir/main.c.obj
 .PHONY : main.c.obj
 
 main.i: main.c.i
@@ -141,7 +141,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Manipulating_TGA_Files.dir\build.make CMakeFiles/Manipulating_TGA_Files.dir/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\tga_reader.dir\build.make CMakeFiles/tga_reader.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -149,7 +149,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Manipulating_TGA_Files.dir\build.make CMakeFiles/Manipulating_TGA_Files.dir/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\tga_reader.dir\build.make CMakeFiles/tga_reader.dir/main.c.s
 .PHONY : main.c.s
 
 # Help Target
@@ -160,7 +160,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Manipulating_TGA_Files
+	@echo ... tga_reader
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

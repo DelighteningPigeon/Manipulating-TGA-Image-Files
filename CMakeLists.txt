@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.10)
 
 project(image_tool)
 
-add_executable(tga_reader tga_reader.c)
+add_executable(tga_reader main.c)
 
 set_target_properties(
         tga_reader

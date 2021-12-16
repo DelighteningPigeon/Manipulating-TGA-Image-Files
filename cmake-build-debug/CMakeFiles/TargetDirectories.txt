@@ -1,3 +1,0 @@
-C:/Users/PC/CLionProjects/Manipulating-TGA-Files/cmake-build-debug/CMakeFiles/tga_reader.dir
-C:/Users/PC/CLionProjects/Manipulating-TGA-Files/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/PC/CLionProjects/Manipulating-TGA-Files/cmake-build-debug/CMakeFiles/rebuild_cache.dir

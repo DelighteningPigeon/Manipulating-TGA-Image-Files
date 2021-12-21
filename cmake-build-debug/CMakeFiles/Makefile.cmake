@@ -51,5 +51,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/tga_reader.dir/DependInfo.cmake"
+  "CMakeFiles/Manipulating-TGA-Files.dir/DependInfo.cmake"
   )

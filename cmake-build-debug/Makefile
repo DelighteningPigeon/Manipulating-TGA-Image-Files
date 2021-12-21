@@ -64,16 +64,6 @@ CMAKE_BINARY_DIR = C:\Users\PC\CLionProjects\Manipulating-TGA-Files\cmake-build-
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -83,6 +73,16 @@ rebuild_cache:
 # Special rule for the target rebuild_cache
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	"C:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -116,24 +116,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named tga_reader
+# Target rules for targets named Manipulating-TGA-Files
 
 # Build rule for target.
-tga_reader: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tga_reader
-.PHONY : tga_reader
+Manipulating-TGA-Files: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Manipulating-TGA-Files
+.PHONY : Manipulating-TGA-Files
 
 # fast build rule for target.
-tga_reader/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tga_reader.dir\build.make CMakeFiles/tga_reader.dir/build
-.PHONY : tga_reader/fast
+Manipulating-TGA-Files/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Manipulating-TGA-Files.dir\build.make CMakeFiles/Manipulating-TGA-Files.dir/build
+.PHONY : Manipulating-TGA-Files/fast
 
 main.obj: main.c.obj
 .PHONY : main.obj
 
 # target to build an object file
 main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tga_reader.dir\build.make CMakeFiles/tga_reader.dir/main.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Manipulating-TGA-Files.dir\build.make CMakeFiles/Manipulating-TGA-Files.dir/main.c.obj
 .PHONY : main.c.obj
 
 main.i: main.c.i
@@ -141,7 +141,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tga_reader.dir\build.make CMakeFiles/tga_reader.dir/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Manipulating-TGA-Files.dir\build.make CMakeFiles/Manipulating-TGA-Files.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -149,7 +149,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tga_reader.dir\build.make CMakeFiles/tga_reader.dir/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Manipulating-TGA-Files.dir\build.make CMakeFiles/Manipulating-TGA-Files.dir/main.c.s
 .PHONY : main.c.s
 
 # Help Target
@@ -160,7 +160,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... tga_reader
+	@echo ... Manipulating-TGA-Files
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

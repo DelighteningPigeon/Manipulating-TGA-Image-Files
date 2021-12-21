@@ -19,7 +19,7 @@ int main()
     char c; // 1 byte
     unsigned char u; // 1 byte
 
-    FILE* fp = fopen("./shuttle.tga", "rb");
+    FILE* fp = fopen("./Font.tga", "rb");
     FILE* outfile = NULL;
     if (fp == NULL) {
         fprintf(stderr, "cannot open file\n");

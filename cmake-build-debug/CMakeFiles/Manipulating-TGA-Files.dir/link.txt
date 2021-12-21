@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\Manipulating-TGA-Files.dir/objects.a
+C:\PROGRA~1\CODEBL~1\MinGW\bin\ar.exe cr CMakeFiles\Manipulating-TGA-Files.dir/objects.a @CMakeFiles\Manipulating-TGA-Files.dir\objects1.rsp
+C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\Manipulating-TGA-Files.dir/objects.a -Wl,--no-whole-archive -o Manipulating-TGA-Files.exe -Wl,--out-implib,libManipulating-TGA-Files.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Manipulating-TGA-Files.dir\linklibs.rsp

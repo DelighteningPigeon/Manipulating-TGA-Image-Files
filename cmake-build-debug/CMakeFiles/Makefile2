@@ -62,7 +62,7 @@ CMAKE_BINARY_DIR = C:\Users\PC\CLionProjects\Manipulating-TGA-Files\cmake-build-
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/tga_reader.dir/all
+all: CMakeFiles/Manipulating-TGA-Files.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -70,34 +70,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/tga_reader.dir/clean
+clean: CMakeFiles/Manipulating-TGA-Files.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/tga_reader.dir
+# Target rules for target CMakeFiles/Manipulating-TGA-Files.dir
 
 # All Build rule for target.
-CMakeFiles/tga_reader.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tga_reader.dir\build.make CMakeFiles/tga_reader.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tga_reader.dir\build.make CMakeFiles/tga_reader.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\PC\CLionProjects\Manipulating-TGA-Files\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target tga_reader"
-.PHONY : CMakeFiles/tga_reader.dir/all
+CMakeFiles/Manipulating-TGA-Files.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Manipulating-TGA-Files.dir\build.make CMakeFiles/Manipulating-TGA-Files.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Manipulating-TGA-Files.dir\build.make CMakeFiles/Manipulating-TGA-Files.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\PC\CLionProjects\Manipulating-TGA-Files\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target Manipulating-TGA-Files"
+.PHONY : CMakeFiles/Manipulating-TGA-Files.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/tga_reader.dir/rule: cmake_check_build_system
+CMakeFiles/Manipulating-TGA-Files.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\PC\CLionProjects\Manipulating-TGA-Files\cmake-build-debug\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/tga_reader.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Manipulating-TGA-Files.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\PC\CLionProjects\Manipulating-TGA-Files\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/tga_reader.dir/rule
+.PHONY : CMakeFiles/Manipulating-TGA-Files.dir/rule
 
 # Convenience name for target.
-tga_reader: CMakeFiles/tga_reader.dir/rule
-.PHONY : tga_reader
+Manipulating-TGA-Files: CMakeFiles/Manipulating-TGA-Files.dir/rule
+.PHONY : Manipulating-TGA-Files
 
 # clean rule for target.
-CMakeFiles/tga_reader.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tga_reader.dir\build.make CMakeFiles/tga_reader.dir/clean
-.PHONY : CMakeFiles/tga_reader.dir/clean
+CMakeFiles/Manipulating-TGA-Files.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Manipulating-TGA-Files.dir\build.make CMakeFiles/Manipulating-TGA-Files.dir/clean
+.PHONY : CMakeFiles/Manipulating-TGA-Files.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

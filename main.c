@@ -9,7 +9,6 @@ struct pixel_data{
     unsigned char r;
     unsigned char g;
     unsigned char b;
-    unsigned char a;
 };
 
 struct Pixel_arr {
@@ -24,7 +23,7 @@ typedef struct Pixel_arr PixelArray;
 void function(int input, unsigned long size, struct pixel_data *pixel, ubyte buffer[]) {
 
     FILE *outfile;
-    outfile = fopen("../edited.tga", "w");
+    outfile = fopen("../edited.tga", "wb");
     fwrite(buffer, 1, 18, outfile);
 
     if (input == 1) {
@@ -32,21 +31,18 @@ void function(int input, unsigned long size, struct pixel_data *pixel, ubyte buf
             putc(pixel[z].g, outfile);
             putc(pixel[z].b, outfile);
             putc(pixel[z].r, outfile);
-            putc(pixel[z].a, outfile);
         }
     } else if (input == 2) {
         for (int z = 0; z < size; z++) {
             putc(pixel[z].g, outfile);
             putc(pixel[z].r, outfile);
             putc(pixel[z].b, outfile);
-            putc(pixel[z].a, outfile);
         }
     } else if (input == 3) {
         for (int z = 0; z < size; z++) {
             putc(pixel[z].r, outfile);
             putc(pixel[z].g, outfile);
             putc(pixel[z].b, outfile);
-            putc(pixel[z].a, outfile);
         }
     }
 }
@@ -57,7 +53,7 @@ int main() {
     char c; // 1 byte
     unsigned char u; // 1 byte
 
-    FILE *fp = fopen("../Font.tga", "rb");
+    FILE *fp = fopen("../earth.tga", "rb");
     FILE *outfile = NULL;
 
     if (fp == NULL) {
@@ -107,10 +103,10 @@ int main() {
     }
 
     struct pixel_data *pixel;
-    pixel = malloc(pix.width * pix.height * sizeof(struct pixel_data));
+    pixel = (struct pixel_data *)malloc(pix.width * pix.height * sizeof(struct pixel_data));
     unsigned char component[5];
 
-    int bytes = 4;
+    int bytes = 3;
     fseek(fp, 0, SEEK_SET);
 
     while (i < pix.width * pix.height) {
@@ -118,7 +114,6 @@ int main() {
         pixel[i].r = component[2];
         pixel[i].g = component[1];
         pixel[i].b = component[0];
-        pixel[i].a = component[3];
         i++;
     }
 
